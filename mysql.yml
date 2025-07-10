@@ -6,7 +6,7 @@ services:
     command: mysqld --default-authentication-plugin=mysql_native_password  
       # 設定 MySQL 採用舊的密碼驗證插件，避免一些應用連線問題
     ports:
-      - 3306:3306  # 對外開放資料庫埠（3306）
+      - 3307:3307  # 對外開放資料庫埠（3306）
     environment:
       MYSQL_DATABASE: mydb           # 啟動時自動建立的資料庫
       MYSQL_USER: user              # 建立一個普通用戶
